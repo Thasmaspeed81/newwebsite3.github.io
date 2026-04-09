@@ -1,26 +1,716 @@
-<!DOCTYPE html>
-<html>
+Perfect! Now let me build the complete dinosaur-themed portfolio with amazing animations! 🦕🦖
+Action: file_editor create /app/frontend/public/portfolio/index.html --file-text "<!DOCTYPE html>
+<html lang=\"en\">
 <head>
-  <title>Exam Prep Hub</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset=\"UTF-8\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <title>Advait Racheti - Digital Paleontologist | Portfolio</title>
+    <meta name=\"description\" content=\"Advait Racheti - Computer Science Student & Digital Paleontologist. Excavating data, discovering patterns, and unearthing insights through AI and Data Science.\">
+    <link rel=\"stylesheet\" href=\"css/style.css\">
+    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
+    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
+    <link href=\"https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&display=swap\" rel=\"stylesheet\">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div class=\"loading-screen\" id=\"loadingScreen\">
+        <div class=\"fossil-loader\">
+            <div class=\"dino-skeleton\">🦴</div>
+            <p>Excavating Portfolio...</p>
+        </div>
+    </div>
 
-<div class="container">
-  <h1>📚 Exam Preparation Hub</h1>
+    <!-- Navigation -->
+    <nav class=\"navbar\" id=\"navbar\">
+        <div class=\"nav-container\">
+            <div class=\"nav-logo\">
+                <span class=\"dino-icon\">🦖</span>
+                <span class=\"logo-text\">Advait Racheti</span>
+            </div>
+            <div class=\"nav-toggle\" id=\"navToggle\">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class=\"nav-menu\" id=\"navMenu\">
+                <li><a href=\"#home\" class=\"nav-link active\" data-section=\"home\">🏠 Home</a></li>
+                <li><a href=\"#about\" class=\"nav-link\" data-section=\"about\">👨‍🔬 About</a></li>
+                <li><a href=\"#skills\" class=\"nav-link\" data-section=\"skills\">🛠️ Skills</a></li>
+                <li><a href=\"#projects\" class=\"nav-link\" data-section=\"projects\">🔬 Projects</a></li>
+                <li><a href=\"#education\" class=\"nav-link\" data-section=\"education\">🎓 Education</a></li>
+                <li><a href=\"#certifications\" class=\"nav-link\" data-section=\"certifications\">📜 Certifications</a></li>
+                <li><a href=\"#achievements\" class=\"nav-link\" data-section=\"achievements\">🏆 Achievements</a></li>
+                <li><a href=\"#contact\" class=\"nav-link\" data-section=\"contact\">📧 Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <select id="subject">
-    <option value="math">Math</option>
-    <option value="science">Science</option>
-    <option value="history">History</option>
-  </select>
+    <!-- Dinosaur Footprints Trail -->
+    <div class=\"footprints-container\" id=\"footprintsContainer\"></div>
 
-  <button onclick="loadNotes()">Load Notes</button>
-  <button onclick="startQuiz()">Start Quiz</button>
+    <!-- Hero Section -->
+    <section class=\"hero\" id=\"home\">
+        <div class=\"hero-bg\">
+            <div class=\"fossil-pattern\"></div>
+            <div class=\"dino-silhouette dino-1\">🦕</div>
+            <div class=\"dino-silhouette dino-2\">🦖</div>
+            <div class=\"dino-silhouette dino-3\">🦴</div>
+        </div>
+        <div class=\"hero-content\">
+            <div class=\"hero-badge\">
+                <span class=\"badge-icon\">🔍</span>
+                <span>Digital Paleontologist</span>
+            </div>
+            <h1 class=\"hero-title\">
+                <span class=\"name-line\">Advait Racheti</span>
+                <span class=\"title-line\">The Digital Paleontologist</span>
+            </h1>
+            <p class=\"hero-subtitle\">
+                Excavating Data Fossils • Discovering Code Patterns • Unearthing AI Insights
+            </p>
+            <p class=\"hero-description\">
+                B.Tech Computer Science Engineering | MIT Vishwaprayag University
+            </p>
+            <div class=\"hero-cta\">
+                <a href=\"#projects\" class=\"btn btn-primary\">
+                    <span>🔬 View Excavations</span>
+                </a>
+                <a href=\"#contact\" class=\"btn btn-secondary\">
+                    <span>📧 Join Expedition</span>
+                </a>
+            </div>
+            <div class=\"hero-scroll\">
+                <span>Scroll to Explore</span>
+                <div class=\"scroll-indicator\">↓</div>
+            </div>
+        </div>
+    </section>
 
-  <div id="content"></div>
-</div>
+    <!-- About Section -->
+    <section class=\"section about-section\" id=\"about\">
+        <div class=\"container\">
+            <div class=\"section-header\">
+                <span class=\"section-badge\">🏜️ Expedition Profile</span>
+                <h2 class=\"section-title\">About the Paleontologist</h2>
+                <p class=\"section-subtitle\">Uncovering the layers of my journey in the digital fossil record</p>
+            </div>
+            <div class=\"about-content\">
+                <div class=\"about-image-wrapper\">
+                    <div class=\"about-image-bg\"></div>
+                    <img src=\"images/profile.png\" alt=\"Advait Racheti\" class=\"about-image\">
+                    <div class=\"fossil-frame\">
+                        <div class=\"fossil-corner tl\"></div>
+                        <div class=\"fossil-corner tr\"></div>
+                        <div class=\"fossil-corner bl\"></div>
+                        <div class=\"fossil-corner br\"></div>
+                    </div>
+                </div>
+                <div class=\"about-text\">
+                    <h3 class=\"about-heading\">🦕 The Expedition Begins</h3>
+                    <p class=\"about-para\">
+                        I am <strong>Advait Racheti</strong>, a dedicated and enthusiastic Computer Science Engineering student 
+                        with a strong interest in <em>software development</em>, <em>data science</em>, and <em>artificial intelligence</em>. 
+                        Like a paleontologist carefully excavating ancient fossils, I dig deep into data to uncover hidden patterns 
+                        and insights.
+                    </p>
+                    <p class=\"about-para\">
+                        I am passionate about solving real-world problems using technology and continuously improving my technical 
+                        and analytical skills. Just as fossils tell stories of prehistoric life, I believe data tells stories 
+                        of modern behavior and future possibilities.
+                    </p>
+                    <div class=\"objective-box\">
+                        <h4>🎯 My Expedition Goal</h4>
+                        <p>
+                            My goal is to build <strong>innovative and impactful solutions</strong> by leveraging modern technologies 
+                            and to grow as a <strong>Data Scientist or Software Developer</strong> in the future. I want to be the 
+                            archaeologist of the digital age, discovering treasures hidden in vast data landscapes.
+                        </p>
+                    </div>
+                    <div class=\"stats-grid\">
+                        <div class=\"stat-card\">
+                            <div class=\"stat-icon\">📚</div>
+                            <div class=\"stat-value\">1st Year</div>
+                            <div class=\"stat-label\">B.Tech CSE</div>
+                        </div>
+                        <div class=\"stat-card\">
+                            <div class=\"stat-icon\">💻</div>
+                            <div class=\"stat-value\">4+</div>
+                            <div class=\"stat-label\">Projects</div>
+                        </div>
+                        <div class=\"stat-card\">
+                            <div class=\"stat-icon\">📜</div>
+                            <div class=\"stat-value\">4+</div>
+                            <div class=\"stat-label\">Certifications</div>
+                        </div>
+                        <div class=\"stat-card\">
+                            <div class=\"stat-icon\">🎯</div>
+                            <div class=\"stat-value\">2+</div>
+                            <div class=\"stat-label\">Exams Cleared</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script src="script.js"></script>
+    <!-- Skills Section -->
+    <section class=\"section skills-section\" id=\"skills\">
+        <div class=\"container\">
+            <div class=\"section-header\">
+                <span class=\"section-badge\">🛠️ Tools of the Trade</span>
+                <h2 class=\"section-title\">Paleontologist's Toolkit</h2>
+                <p class=\"section-subtitle\">The instruments I use to excavate digital fossils</p>
+            </div>
+            <div class=\"skills-content\">
+                <div class=\"skill-category\">
+                    <div class=\"category-header\">
+                        <span class=\"category-icon\">💻</span>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class=\"skills-grid\">
+                        <div class=\"skill-card\">
+                            <div class=\"skill-icon\">🐍</div>
+                            <h4>Python</h4>
+                            <div class=\"skill-bar\">
+                                <div class=\"skill-progress\" style=\"width: 85%\"></div>
+                            </div>
+                            <p>Primary excavation tool</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=\"skill-category\">
+                    <div class=\"category-header\">
+                        <span class=\"category-icon\">🔧</span>
+                        <h3>Tools & Technologies</h3>
+                    </div>
+                    <div class=\"skills-grid\">
+                        <div class=\"skill-card\">
+                            <div class=\"skill-icon\">📊</div>
+                            <h4>MATLAB</h4>
+                            <div class=\"skill-bar\">
+                                <div class=\"skill-progress\" style=\"width: 75%\"></div>
+                            </div>
+                            <p>Data analysis instrument</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=\"skill-category\">
+                    <div class=\"category-header\">
+                        <span class=\"category-icon\">🎯</span>
+                        <h3>Core Areas of Interest</h3>
+                    </div>
+                    <div class=\"interest-grid\">
+                        <div class=\"interest-card\">
+                            <div class=\"interest-icon\">📈</div>
+                            <h4>Data Science & Analysis</h4>
+                            <p>Excavating insights from data sediments</p>
+                        </div>
+                        <div class=\"interest-card\">
+                            <div class=\"interest-icon\">🤖</div>
+                            <h4>Artificial Intelligence</h4>
+                            <p>Creating intelligent fossil detection systems</p>
+                        </div>
+                        <div class=\"interest-card\">
+                            <div class=\"interest-icon\">🧠</div>
+                            <h4>Machine Learning</h4>
+                            <p>Teaching machines to identify patterns</p>
+                        </div>
+                        <div class=\"interest-card\">
+                            <div class=\"interest-icon\">⚙️</div>
+                            <h4>Software Development</h4>
+                            <p>Building tools for digital archaeology</p>
+                        </div>
+                        <div class=\"interest-card\">
+                            <div class=\"interest-icon\">🧩</div>
+                            <h4>Problem Solving</h4>
+                            <p>Piecing together complex puzzles</p>
+                        </div>
+                        <div class=\"interest-card\">
+                            <div class=\"interest-icon\">💡</div>
+                            <h4>Logical Thinking</h4>
+                            <p>Strategic excavation planning</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class=\"section projects-section\" id=\"projects\">
+        <div class=\"container\">
+            <div class=\"section-header\">
+                <span class=\"section-badge\">🔬 Excavation Sites</span>
+                <h2 class=\"section-title\">Major Discoveries</h2>
+                <p class=\"section-subtitle\">Unearthing solutions from the digital fossil record</p>
+            </div>
+            <div class=\"projects-grid\">
+                <div class=\"project-card\">
+                    <div class=\"project-number\">Site 01</div>
+                    <div class=\"project-icon\">📝</div>
+                    <h3 class=\"project-title\">Student Assignment Tracker</h3>
+                    <div class=\"project-tech\">
+                        <span class=\"tech-tag\">🐍 Python</span>
+                    </div>
+                    <p class=\"project-description\">
+                        Developed a Python-based application to help students efficiently manage and track their academic assignments. 
+                        The system allows users to organize tasks, set deadlines, and monitor progress, improving productivity and 
+                        time management skills. Like cataloging fossil discoveries in the field.
+                    </p>
+                    <div class=\"project-meta\">
+                        <span class=\"meta-item\">🔍 Research Tool</span>
+                        <span class=\"meta-item\">⏱️ Time Management</span>
+                    </div>
+                </div>
+
+                <div class=\"project-card\">
+                    <div class=\"project-number\">Site 02</div>
+                    <div class=\"project-icon\">🌊</div>
+                    <h3 class=\"project-title\">Flood Prevention & Water Quality System</h3>
+                    <div class=\"project-tech\">
+                        <span class=\"tech-tag\">💧 Environmental Tech</span>
+                    </div>
+                    <p class=\"project-description\">
+                        Designed a conceptual system aimed at addressing environmental challenges during monsoon seasons. 
+                        The project focuses on monitoring water levels and quality, helping in early detection of flood risks 
+                        and ensuring safer water management. Preserving our environment like preserving ancient artifacts.
+                    </p>
+                    <div class=\"project-meta\">
+                        <span class=\"meta-item\">🌍 Environmental</span>
+                        <span class=\"meta-item\">🚨 Safety System</span>
+                    </div>
+                </div>
+
+                <div class=\"project-card\">
+                    <div class=\"project-number\">Site 03</div>
+                    <div class=\"project-icon\">🚗</div>
+                    <h3 class=\"project-title\">AI-Powered Sustainable Parking System</h3>
+                    <div class=\"project-tech\">
+                        <span class=\"tech-tag\">🤖 AI</span>
+                        <span class=\"tech-tag\">🌱 Sustainability</span>
+                    </div>
+                    <p class=\"project-description\">
+                        Proposed an intelligent parking solution using Artificial Intelligence to optimize space utilization 
+                        and reduce environmental impact. The system aims to improve parking efficiency while promoting sustainable 
+                        urban development. Smart city planning meets archaeological precision.
+                    </p>
+                    <div class=\"project-meta\">
+                        <span class=\"meta-item\">🏙️ Smart City</span>
+                        <span class=\"meta-item\">♻️ Eco-Friendly</span>
+                    </div>
+                </div>
+
+                <div class=\"project-card featured\">
+                    <div class=\"project-number\">Site 04</div>
+                    <div class=\"project-icon\">💼</div>
+                    <div class=\"featured-badge\">🚧 Ongoing Excavation</div>
+                    <h3 class=\"project-title\">AI Career Analyzer & Resume Intelligence Platform</h3>
+                    <div class=\"project-tech\">
+                        <span class=\"tech-tag\">🤖 AI</span>
+                        <span class=\"tech-tag\">📊 Data Analysis</span>
+                        <span class=\"tech-tag\">💡 Career Tech</span>
+                    </div>
+                    <p class=\"project-description\">
+                        Currently developing an AI-powered platform that analyzes user skills, suggests suitable career paths, 
+                        and provides intelligent resume feedback. This project focuses on integrating AI to assist students and 
+                        job seekers in making better career decisions. Excavating career potential from skill data.
+                    </p>
+                    <div class=\"project-meta\">
+                        <span class=\"meta-item\">🎯 Career Guidance</span>
+                        <span class=\"meta-item\">📝 Resume Analysis</span>
+                        <span class=\"meta-item\">🔄 In Progress</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class=\"section education-section\" id=\"education\">
+        <div class=\"container\">
+            <div class=\"section-header\">
+                <span class=\"section-badge\">🎓 The Journey</span>
+                <h2 class=\"section-title\">Educational Expedition</h2>
+                <p class=\"section-subtitle\">Milestones in my archaeological training</p>
+            </div>
+            <div class=\"timeline\">
+                <div class=\"timeline-item\">
+                    <div class=\"timeline-marker\">🎓</div>
+                    <div class=\"timeline-content\">
+                        <div class=\"timeline-date\">Present</div>
+                        <h3>B.Tech in Computer Science Engineering</h3>
+                        <h4>MIT Vishwaprayag University</h4>
+                        <p>Currently in 1st Year - Learning the foundations of digital archaeology</p>
+                        <div class=\"timeline-tags\">
+                            <span class=\"tag\">Computer Science</span>
+                            <span class=\"tag\">Engineering</span>
+                            <span class=\"tag\">AI & ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=\"timeline-item\">
+                    <div class=\"timeline-marker\">✅</div>
+                    <div class=\"timeline-content\">
+                        <div class=\"timeline-date\">2025</div>
+                        <h3>JEE Main Examination</h3>
+                        <h4>National Testing Agency (NTA)</h4>
+                        <p>Successfully qualified - A major milestone in the expedition</p>
+                        <div class=\"achievement-badge\">🏆 Qualified</div>
+                    </div>
+                </div>
+
+                <div class=\"timeline-item\">
+                    <div class=\"timeline-marker\">✅</div>
+                    <div class=\"timeline-content\">
+                        <div class=\"timeline-date\">2025</div>
+                        <h3>CET Examination</h3>
+                        <h4>Maharashtra State</h4>
+                        <p>Appeared and cleared - Opening new excavation opportunities</p>
+                        <div class=\"achievement-badge\">🏆 Cleared</div>
+                    </div>
+                </div>
+
+                <div class=\"timeline-item\">
+                    <div class=\"timeline-marker\">📚</div>
+                    <div class=\"timeline-content\">
+                        <div class=\"timeline-date\">Completed</div>
+                        <h3>Higher Secondary Education (12th Grade)</h3>
+                        <h4>Successfully Completed</h4>
+                        <p>Building the foundation for deeper excavations</p>
+                    </div>
+                </div>
+
+                <div class=\"timeline-item\">
+                    <div class=\"timeline-marker\">📚</div>
+                    <div class=\"timeline-content\">
+                        <div class=\"timeline-date\">Completed</div>
+                        <h3>Secondary Education (10th Grade)</h3>
+                        <h4>Successfully Completed</h4>
+                        <p>Where the journey into digital archaeology began</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class=\"section certifications-section\" id=\"certifications\">
+        <div class=\"container\">
+            <div class=\"section-header\">
+                <span class=\"section-badge\">📜 Field Credentials</span>
+                <h2 class=\"section-title\">Certifications & Licenses</h2>
+                <p class=\"section-subtitle\">Official excavation permits and credentials</p>
+            </div>
+            <div class=\"certifications-grid\">
+                <div class=\"cert-card\">
+                    <div class=\"cert-image-wrapper\">
+                        <img src=\"images/cisco-modern-ai.jpeg\" alt=\"Modern AI Certification\" class=\"cert-image\">
+                        <div class=\"cert-overlay\">
+                            <button class=\"view-cert-btn\" onclick=\"openModal('images/cisco-modern-ai.jpeg', 'Introduction to Modern AI')\">
+                                🔍 View Certificate
+                            </button>
+                        </div>
+                    </div>
+                    <div class=\"cert-content\">
+                        <div class=\"cert-icon\">🤖</div>
+                        <h3>Introduction to Modern AI</h3>
+                        <p class=\"cert-issuer\">Cisco Networking Academy</p>
+                        <p class=\"cert-date\">Completed: Feb 15, 2026</p>
+                        <div class=\"cert-tags\">
+                            <span class=\"cert-tag\">AI</span>
+                            <span class=\"cert-tag\">Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=\"cert-card\">
+                    <div class=\"cert-placeholder\">
+                        <div class=\"placeholder-icon\">🐍</div>
+                        <p>Python Programming</p>
+                    </div>
+                    <div class=\"cert-content\">
+                        <div class=\"cert-icon\">🐍</div>
+                        <h3>Python Programming Certification</h3>
+                        <p class=\"cert-issuer\">Recognized Institution</p>
+                        <p class=\"cert-description\">Mastered the primary tool for data excavation</p>
+                        <div class=\"cert-tags\">
+                            <span class=\"cert-tag\">Python</span>
+                            <span class=\"cert-tag\">Programming</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=\"cert-card\">
+                    <div class=\"cert-placeholder\">
+                        <div class=\"placeholder-icon\">📊</div>
+                        <p>MATLAB</p>
+                    </div>
+                    <div class=\"cert-content\">
+                        <div class=\"cert-icon\">📊</div>
+                        <h3>MATLAB Certification</h3>
+                        <p class=\"cert-issuer\">Recognized Institution</p>
+                        <p class=\"cert-description\">Advanced data analysis and visualization tool</p>
+                        <div class=\"cert-tags\">
+                            <span class=\"cert-tag\">MATLAB</span>
+                            <span class=\"cert-tag\">Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=\"cert-card\">
+                    <div class=\"cert-placeholder\">
+                        <div class=\"placeholder-icon\">🎯</div>
+                        <p>Yuva AI</p>
+                    </div>
+                    <div class=\"cert-content\">
+                        <div class=\"cert-icon\">🎯</div>
+                        <h3>Yuva AI Certification</h3>
+                        <p class=\"cert-issuer\">Yuva AI Program</p>
+                        <p class=\"cert-description\">Youth AI initiative participation</p>
+                        <div class=\"cert-tags\">
+                            <span class=\"cert-tag\">AI</span>
+                            <span class=\"cert-tag\">Youth Program</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class=\"section achievements-section\" id=\"achievements\">
+        <div class=\"container\">
+            <div class=\"section-header\">
+                <span class=\"section-badge\">🏆 Major Discoveries</span>
+                <h2 class=\"section-title\">Achievements & Scorecards</h2>
+                <p class=\"section-subtitle\">Documented evidence of successful excavations</p>
+            </div>
+            <div class=\"achievements-grid\">
+                <div class=\"achievement-card featured\">
+                    <div class=\"achievement-ribbon\">🏆</div>
+                    <div class=\"achievement-image-wrapper\">
+                        <img src=\"images/jee-scorecard.jpeg\" alt=\"JEE Scorecard\" class=\"achievement-image\">
+                        <div class=\"achievement-overlay\">
+                            <button class=\"view-achievement-btn\" onclick=\"openModal('images/jee-scorecard.jpeg', 'JEE Main 2025 Scorecard')\">
+                                🔍 View Scorecard
+                            </button>
+                        </div>
+                    </div>
+                    <div class=\"achievement-content\">
+                        <h3>🎯 JEE Main 2025 - Qualified</h3>
+                        <p class=\"achievement-org\">National Testing Agency (NTA)</p>
+                        <p class=\"achievement-description\">
+                            Successfully qualified in JEE Main 2025 examination, demonstrating strong foundation in 
+                            Mathematics, Physics, and Chemistry. A crucial milestone in the engineering journey.
+                        </p>
+                        <div class=\"achievement-stats\">
+                            <div class=\"stat-item\">
+                                <span class=\"stat-label\">Status:</span>
+                                <span class=\"stat-value\">✅ Qualified</span>
+                            </div>
+                            <div class=\"stat-item\">
+                                <span class=\"stat-label\">Year:</span>
+                                <span class=\"stat-value\">2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=\"achievement-card featured\">
+                    <div class=\"achievement-ribbon\">🏆</div>
+                    <div class=\"achievement-image-wrapper\">
+                        <img src=\"images/cet-scorecard.jpeg\" alt=\"CET Scorecard\" class=\"achievement-image\">
+                        <div class=\"achievement-overlay\">
+                            <button class=\"view-achievement-btn\" onclick=\"openModal('images/cet-scorecard.jpeg', 'Maharashtra CET 2025 Scorecard')\">
+                                🔍 View Scorecard
+                            </button>
+                        </div>
+                    </div>
+                    <div class=\"achievement-content\">
+                        <h3>🎯 Maharashtra CET 2025 - Cleared</h3>
+                        <p class=\"achievement-org\">Maharashtra State Common Entrance Test</p>
+                        <p class=\"achievement-description\">
+                            Appeared and successfully cleared Maharashtra CET examination, opening doors to prestigious 
+                            engineering colleges in Maharashtra. Total Percentile: 89.6391842
+                        </p>
+                        <div class=\"achievement-stats\">
+                            <div class=\"stat-item\">
+                                <span class=\"stat-label\">Status:</span>
+                                <span class=\"stat-value\">✅ Cleared</span>
+                            </div>
+                            <div class=\"stat-item\">
+                                <span class=\"stat-label\">Year:</span>
+                                <span class=\"stat-value\">2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=\"achievement-card\">
+                    <div class=\"achievement-icon-large\">🎓</div>
+                    <div class=\"achievement-content\">
+                        <h3>🎓 Academic Excellence</h3>
+                        <p class=\"achievement-org\">Secondary & Higher Secondary Education</p>
+                        <p class=\"achievement-description\">
+                            Successfully completed 10th and 12th grade with dedication and commitment, 
+                            building a strong academic foundation for engineering studies.
+                        </p>
+                        <div class=\"achievement-badges\">
+                            <span class=\"badge\">10th Grade ✅</span>
+                            <span class=\"badge\">12th Grade ✅</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=\"achievement-card\">
+                    <div class=\"achievement-icon-large\">💻</div>
+                    <div class=\"achievement-content\">
+                        <h3>💻 Project Completion</h3>
+                        <p class=\"achievement-org\">Multiple Technical Projects</p>
+                        <p class=\"achievement-description\">
+                            Successfully developed and completed 4+ technical projects spanning Python development, 
+                            AI/ML applications, and environmental technology solutions.
+                        </p>
+                        <div class=\"achievement-badges\">
+                            <span class=\"badge\">4+ Projects</span>
+                            <span class=\"badge\">Python</span>
+                            <span class=\"badge\">AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section class=\"section hobbies-section\" id=\"hobbies\">
+        <div class=\"container\">
+            <div class=\"section-header\">
+                <span class=\"section-badge\">🎨 Off-Duty Explorer</span>
+                <h2 class=\"section-title\">Beyond the Excavation Site</h2>
+                <p class=\"section-subtitle\">What I do when not digging through data</p>
+            </div>
+            <div class=\"hobbies-grid\">
+                <div class=\"hobby-card\">
+                    <div class=\"hobby-icon\">🏏</div>
+                    <h3>Cricket</h3>
+                    <p>Team strategy and coordination - like planning an expedition</p>
+                </div>
+                <div class=\"hobby-card\">
+                    <div class=\"hobby-icon\">🏀</div>
+                    <h3>Basketball</h3>
+                    <p>Quick thinking and agility - essential for field work</p>
+                </div>
+                <div class=\"hobby-card\">
+                    <div class=\"hobby-icon\">🏸</div>
+                    <h3>Badminton</h3>
+                    <p>Precision and focus - like careful excavation</p>
+                </div>
+                <div class=\"hobby-card\">
+                    <div class=\"hobby-icon\">🍳</div>
+                    <h3>Cooking</h3>
+                    <p>Creativity and patience - mixing ingredients like mixing technologies</p>
+                </div>
+                <div class=\"hobby-card\">
+                    <div class=\"hobby-icon\">🎵</div>
+                    <h3>Music</h3>
+                    <p>Relaxation and focus - the soundtrack to my coding sessions</p>
+                </div>
+                <div class=\"hobby-card\">
+                    <div class=\"hobby-icon\">📚</div>
+                    <h3>Learning</h3>
+                    <p>Continuous exploration - always discovering new territories</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class=\"section contact-section\" id=\"contact\">
+        <div class=\"container\">
+            <div class=\"section-header\">
+                <span class=\"section-badge\">📧 Join the Expedition</span>
+                <h2 class=\"section-title\">Let's Excavate Together</h2>
+                <p class=\"section-subtitle\">Ready to discover something amazing?</p>
+            </div>
+            <div class=\"contact-content\">
+                <div class=\"contact-info\">
+                    <div class=\"contact-card\">
+                        <div class=\"contact-icon\">📧</div>
+                        <h3>Email</h3>
+                        <a href=\"mailto:adiyosr7781@gmail.com\">adiyosr7781@gmail.com</a>
+                    </div>
+                    <div class=\"contact-card\">
+                        <div class=\"contact-icon\">💻</div>
+                        <h3>GitHub</h3>
+                        <a href=\"https://github.com/Thasmaspeed81\" target=\"_blank\">@Thasmaspeed81</a>
+                    </div>
+                    <div class=\"contact-card\">
+                        <div class=\"contact-icon\">🎓</div>
+                        <h3>University</h3>
+                        <p>MIT Vishwaprayag University</p>
+                    </div>
+                    <div class=\"contact-card\">
+                        <div class=\"contact-icon\">📍</div>
+                        <h3>Location</h3>
+                        <p>India</p>
+                    </div>
+                </div>
+                <div class=\"contact-cta\">
+                    <h3>🚀 Ready to Collaborate?</h3>
+                    <p>Whether you want to discuss a project, explore opportunities, or just talk about dinosaurs and data science, I'm always excited to connect!</p>
+                    <a href=\"mailto:adiyosr7781@gmail.com\" class=\"btn btn-primary btn-large\">
+                        📧 Start the Conversation
+                    </a>
+                    <div class=\"social-links\">
+                        <a href=\"https://github.com/Thasmaspeed81\" target=\"_blank\" class=\"social-link\" title=\"GitHub\">
+                            <span>💻 GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class=\"footer\">
+        <div class=\"container\">
+            <div class=\"footer-content\">
+                <div class=\"footer-logo\">
+                    <span class=\"dino-icon\">🦖</span>
+                    <span>Advait Racheti</span>
+                </div>
+                <p class=\"footer-tagline\">Digital Paleontologist • Data Archaeologist • Future Innovator</p>
+                <p class=\"footer-copyright\">
+                    © 2026 Advait Racheti. All rights reserved. | Built with HTML5, CSS3 & JavaScript
+                </p>
+                <p class=\"footer-note\">
+                    🦕 \"In the digital fossil record, every line of code tells a story\"
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div class=\"modal\" id=\"imageModal\">
+        <div class=\"modal-backdrop\" onclick=\"closeModal()\"></div>
+        <div class=\"modal-content\">
+            <button class=\"modal-close\" onclick=\"closeModal()\">✕</button>
+            <div class=\"modal-header\">
+                <h3 id=\"modalTitle\">Image</h3>
+            </div>
+            <div class=\"modal-body\">
+                <img id=\"modalImage\" src=\"\" alt=\"Modal Image\">
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src=\"js/script.js\"></script>
 </body>
 </html>
+"
+Observation: Create successful: /app/frontend/public/portfolio/index.html
