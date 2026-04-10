@@ -1,4 +1,4 @@
-Now let me create the JavaScript file with all the interactive features and animations! 🎯
+now let me create the JavaScript file with all the interactive features and animations! 🎯
 Action: file_editor create /app/frontend/public/portfolio/js/script.js --file-text "// ===================================
 // DINOSAUR THEME PORTFOLIO - JAVASCRIPT
 // Digital Paleontologist Interactions
